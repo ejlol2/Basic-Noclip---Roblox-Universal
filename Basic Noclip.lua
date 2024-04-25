@@ -20,7 +20,6 @@ if getgenv().Clipless == true then
             player.LowerTorso.CanCollide = false
             player.UpperTorso.CanCollide = false
             player.HumanoidRootPart.CanCollide = false
-            print("Now waiting")
         end
     end
 end
