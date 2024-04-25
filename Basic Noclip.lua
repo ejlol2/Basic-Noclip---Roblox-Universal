@@ -1,13 +1,10 @@
 local playerCheck = game:GetService("Players").LocalPlayer
-local playerP = workspace.ejh0
 getgenv().noclip = true
 
-if playerCheck then
-    if getgenv().noclip == true then
-        while wait() do
-            playerP.LowerTorso.CanCollide = false
-            playerP.UpperTorso.CanCollide = false
-            playerP.HumanoidRootPart.CanCollide = false
-        end
+if getgenv().noclip == true then
+    while wait() do
+        playerCheck.LowerTorso.CanCollide = false
+        playerCheck.UpperTorso.CanCollide = false
+        playerCheck.HumanoidRootPart.CanCollide = false
     end
 end
